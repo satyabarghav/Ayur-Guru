@@ -2,7 +2,7 @@ import Image from "next/image";
 import Logo from '@/public/logo.png'
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 drop-shadow-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,21 +37,30 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center">
-          <Image src={Logo} alt="Ayur Guru Logo" width={100}/>
+          <Image src={Logo} alt="Ayur Guru Logo" width={80}/>
           <a className="btn btn-ghost text-xl">Ayur Guru</a>
           </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a href="#">Prakriti Info</a>
-          </li>
+        <li>
+        <details>
+          <summary>Info</summary>
+          <ul className="p-2">
+            <li><a>Prakriti</a></li>
+            <li><a>VATA</a></li>
+            <li><a>PITTA</a></li>
+            <li><a>KAPHA</a></li>
+          </ul>
+        </details>
+      </li>
           <li>
               <a>About Us</a>
             </li>
             <li>
               <a>Contact Us</a>
             </li>
+            
         </ul>
       </div>
       <div className="navbar-end">
