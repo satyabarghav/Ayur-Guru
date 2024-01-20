@@ -66,7 +66,7 @@ export default function Home() {
               ancient wisdom meets modern technology to guide you on your
               journey to wellness. Ayurveda, the ancient holistic healing
               system, recognizes that each person is unique. with a distinct
-              constitution known as 'Prakriti.' Understanding your Prakriti can
+              constitution known as Prakriti. Understanding your Prakriti can
               help you make lifestyle choices that promote balance, health, and
               well-being.
             </div>
