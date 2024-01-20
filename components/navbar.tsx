@@ -26,8 +26,16 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Prakriti Info</a>
-            </li>
+        <details>
+          <summary>Info</summary>
+          <ul className="p-2">
+            <li><a>Prakriti</a></li>
+            <li><a>VATA</a></li>
+            <li><a>PITTA</a></li>
+            <li><a>KAPHA</a></li>
+          </ul>
+        </details>
+      </li>
             <li>
               <a>About Us</a>
             </li>
@@ -64,7 +72,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline btn-primary">Ayur Bot</a>
+        <a className="btn btn-outline btn-primary" href="https://console.dialogflow.com/api-client/demo/embedded/87240b21-7222-4d83-b612-6d47a56f73b1">Ayur Bot</a>
       </div>
     </div>
   );

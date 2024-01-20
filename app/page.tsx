@@ -1,8 +1,15 @@
-'use client'
+"use client";
 
 import { useState } from "react";
-
-const AccordionItem = ({ index, title, content }: { index: number, title: string, content: string }) => {
+const AccordionItem = ({
+  index,
+  title,
+  content,
+}: {
+  index: number;
+  title: string;
+  content: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -10,12 +17,23 @@ const AccordionItem = ({ index, title, content }: { index: number, title: string
   };
 
   return (
-    <div className="collapse collapse-arrow bg-base-200">
-      <input type="radio" name={`my-accordion-${index}`} checked={isOpen} onChange={handleToggle} />
-      <div className="collapse-title text-xl font-medium" onClick={handleToggle}>
+    <div className="collapse collapse-arrow bg-base-200 w-5/6 mx-auto ">
+      <input
+        type="radio"
+        name={`my-accordion-${index}`}
+        checked={isOpen}
+        onChange={handleToggle}
+      />
+      <div
+        className="collapse-title text-xl font-medium"
+        onClick={handleToggle}
+      >
         {title}
       </div>
-      <div className="collapse-content" style={{ maxHeight: isOpen ? '1000px' : '0' }}>
+      <div
+        className="collapse-content"
+        style={{ maxHeight: isOpen ? "1000px" : "0px" }}
+      >
         <p>{content}</p>
       </div>
     </div>
@@ -26,23 +44,28 @@ export default function Home() {
   const faqs = [
     {
       title: "Q: What is prakriti in Ayurveda?",
-      content: "A: Prakriti refers to an individual's inherent constitution or Ayurvedic blueprint, comprising the unique balance of Vata, Pitta, and Kapha doshas that influence physical and mental characteristics.",
+      content:
+        "A: Prakriti refers to an individual's inherent constitution or Ayurvedic blueprint, comprising the unique balance of Vata, Pitta, and Kapha doshas that influence physical and mental characteristics.",
     },
     {
       title: "Q: How can I determine my prakriti?",
-      content: "A: Discovering your prakriti is easy with our interactive chatbot. Answer a few simple questions about your lifestyle, preferences, and body characteristics, and receive personalized insights into your Ayurvedic constitution.",
+      content:
+        "A: Discovering your prakriti is easy with our interactive chatbot. Answer a few simple questions about your lifestyle, preferences, and body characteristics, and receive personalized insights into your Ayurvedic constitution.",
     },
     {
       title: "Q: Why is prakriti important for my well-being?",
-      content: "A: Understanding your prakriti enables personalized wellness recommendations. It helps in creating a balanced lifestyle, preventing imbalances, and promoting overall health and vitality tailored to your unique needs.",
+      content:
+        "A: Understanding your prakriti enables personalized wellness recommendations. It helps in creating a balanced lifestyle, preventing imbalances, and promoting overall health and vitality tailored to your unique needs.",
     },
     {
       title: "Q: Can prakriti change over time?",
-      content: "A: While your prakriti remains fairly constant, external factors, lifestyle, and age may influence temporary imbalances. Regular Ayurvedic practices can help bring the doshas back into harmony.",
+      content:
+        "A: While your prakriti remains fairly constant, external factors, lifestyle, and age may influence temporary imbalances. Regular Ayurvedic practices can help bring the doshas back into harmony.",
     },
     {
       title: "Q: Are Ayurvedic recommendations based on prakriti effective?",
-      content: "A: Yes, Ayurvedic recommendations tailored to your prakriti are effective. They provide a holistic approach to well-being, considering physical, mental, and emotional aspects, promoting sustainable health benefits.",
+      content:
+        "A: Yes, Ayurvedic recommendations tailored to your prakriti are effective. They provide a holistic approach to well-being, considering physical, mental, and emotional aspects, promoting sustainable health benefits.",
     },
   ];
   return (
@@ -57,9 +80,11 @@ export default function Home() {
               Balance and Harmony with{" "}
               <span className="text-green-600">Ayurveda</span>
             </div>
-            <button className="btn btn-outline btn-accent">
-              Use Ayur Bot🌿
-            </button>
+            <a href="https://console.dialogflow.com/api-client/demo/embedded/87240b21-7222-4d83-b612-6d47a56f73b1">
+              <button className="btn btn-outline btn-accent">
+                Use Ayur Bot🌿
+              </button>
+            </a>
             <div className="divider"></div>
             <div className="font-sans text-2xl max-w-3xl text-justify">
               Welcome to our Ayurvedic Prakriti Prediction platform. where
@@ -91,9 +116,14 @@ export default function Home() {
           Frequently Asked Questions (FAQs)
         </div>
         {faqs.map((faq, index) => (
-        <AccordionItem key={index} index={index} title={faq.title} content={faq.content} />
-      ))}
-       </div> 
+          <AccordionItem
+            key={index}
+            index={index}
+            title={faq.title}
+            content={faq.content}
+          />
+        ))}
+      </div>
     </div>
   );
 }

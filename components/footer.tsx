@@ -7,7 +7,7 @@ const Footer = () => {
             Made with ❤️ by{" "}
             <a
               className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-              href="https://kluniversity.in"
+              href="https://github.com/rahulkothuri/AyurGuru"
               target="_blank"
               rel="noopener noreferrer"
             >
