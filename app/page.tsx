@@ -61,7 +61,7 @@ export default function Home() {
               Use Ayur Bot🌿
             </button>
             <div className="divider"></div>
-            <div className="text-left font-sans text-2xl max-w-3xl text-justify">
+            <div className="font-sans text-2xl max-w-3xl text-justify">
               Welcome to our Ayurvedic Prakriti Prediction platform. where
               ancient wisdom meets modern technology to guide you on your
               journey to wellness. Ayurveda, the ancient holistic healing
