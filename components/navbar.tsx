@@ -37,7 +37,7 @@ const Navbar = () => {
         </details>
       </li>
             <li>
-              <a>About Us</a>
+              <a href="https://ayur-guru-six.vercel.app/about-us">About Us</a>
             </li>
             <li>
               <a>Contact Us</a>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </details>
       </li>
           <li>
-              <a>About Us</a>
+              <a href="https://ayur-guru-six.vercel.app/about-us">About Us</a>
             </li>
             <li>
               <a>Contact Us</a>
