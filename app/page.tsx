@@ -88,7 +88,7 @@ export default function Home() {
       <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
       <div className="pt-7 px-7 space-y-4">
         <div className="font-bold text-4xl underline mx-auto w-[max-content]">
-          Frequently Asked Questions (FAQ's)
+          Frequently Asked Questions (FAQs)
         </div>
         {faqs.map((faq, index) => (
         <AccordionItem key={index} index={index} title={faq.title} content={faq.content} />
