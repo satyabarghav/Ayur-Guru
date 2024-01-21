@@ -1,5 +1,6 @@
 import Logo from "@/public/logo.png";
 import Image from 'next/image'
+import sdg from '@/public/sdg.png'
 export default function AboutUS() {
   return (
     <div className="container mx-auto w-full">
@@ -51,11 +52,11 @@ export default function AboutUS() {
               The Technology Behind the Magic
             </div>
             <div className="font-sans text-xl max-w-3xl text-justify">
-              Our NLP chatbot is no ordinary conversationalist. It's a{" "}
+              Our NLP chatbot is no ordinary conversationalist. It{"'"}s a{" "}
               <span className="font-bold">sophisticated AI</span> trained on
               vast amounts of Ayurvedic data and linguistic nuances. As you
               interact, the chatbot analyzes your responses, identifying subtle
-              patterns that paint a picture of your unique Prakriti. It's like
+              patterns that paint a picture of your unique Prakriti. It{"'"}s like
               having a wise Ayurvedic master whispering the secrets of your
               inner self.
             </div>
@@ -65,7 +66,7 @@ export default function AboutUS() {
             <div className="font-sans text-xl max-w-3xl text-justify">
               We are a passionate team of students united by a common goal: to
               make Prakriti knowledge accessible and transformative. We believe
-              technology can be a powerful tool for good, and we're dedicated to
+              technology can be a powerful tool for good, and we{"'"}re dedicated to
               using it to empower individuals on their wellness journeys.
             </div>
             <div className="text-left font-bold text-3xl mb-5 underline pt-3">
@@ -84,7 +85,7 @@ export default function AboutUS() {
             <div className="font-sans text-xl max-w-3xl text-justify">
               Explore our website for additional resources, connect with fellow
               Prakriti seekers on our forum, and stay updated on our latest
-              developments. Together, let's build a world where understanding
+              developments. Together, let{"'"}s build a world where understanding
               your Prakriti is the foundation for a life well-lived.
             </div>
           </div>
@@ -94,6 +95,11 @@ export default function AboutUS() {
             <Image
              src = {Logo}
              alt = "logo"
+             />
+             <Image
+             src = {sdg}
+             alt = "sdg"
+             width = "500"
              /> 
           </div>
       </div>
