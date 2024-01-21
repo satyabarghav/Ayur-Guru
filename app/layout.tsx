@@ -7,6 +7,10 @@ import Footer from "@/components/footer"
 export const metadata: Metadata = {
   title: "Ayur Guru",
   description: "Your Ayurvedic Companion for a Balanced Life",
+  icons: {
+      icon: "/favicon.ico",
+      apple: "/apple-icon.png"
+  }
 };
 
 export default function RootLayout({
