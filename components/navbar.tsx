@@ -40,13 +40,13 @@ const Navbar = () => {
               <a href="https://ayur-guru-six.vercel.app/about-us">About Us</a>
             </li>
             <li>
-              <a>Contact Us</a>
+              <a href="https://ayur-guru-six.vercel.app/contact-us">Contact Us</a>
             </li>
           </ul>
         </div>
         <div className="flex items-center">
           <Image src={Logo} alt="Ayur Guru Logo" width={80}/>
-          <a className="btn btn-ghost text-xl">Ayur Guru</a>
+          <a className="btn btn-ghost text-xl" href="https://ayur-guru-six.vercel.app/">Ayur Guru</a>
           </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -66,7 +66,7 @@ const Navbar = () => {
               <a href="https://ayur-guru-six.vercel.app/about-us">About Us</a>
             </li>
             <li>
-              <a>Contact Us</a>
+              <a href="https://ayur-guru-six.vercel.app/contact-us">Contact Us</a>
             </li>
             
         </ul>
